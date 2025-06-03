@@ -7,9 +7,6 @@ electives = ["Machine Learning", "Cyber Security", "Cloud Computing", "Data Scie
 
 @app.route('/')
 def index():
-
-    
-    
     return render_template('index.html', electives=electives)
 
 @app.route('/submit', methods=['POST'])
